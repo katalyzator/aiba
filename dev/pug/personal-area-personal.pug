@@ -1,0 +1,88 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		include ../components/header.pug
+		section.personal-area
+			.uk-container-expand.uk-container
+				
+				.uk-grid(class="uk-grid-small" uk-grid)
+					div(class="uk-width-expand@m")
+						div.uk-card-default.uk-card-body
+							h1 МОИ ПАРТНЕРЫ
+							.uk-overflow-auto
+								table.uk-table.uk-table-small.uk-table-divider.uk-table-hover.uk-table-middle
+									thead
+										tr 			 				
+											th Партнеры
+											th Количество
+											th 
+									tbody
+										tr
+											td 1 линии
+											td 0
+											td Подробнее
+										tr
+											td 2 линии
+											td 0
+											td Подробнее
+										tr
+											td 3 линии
+											td 0
+											td Подробнее
+										tr
+											td 4 линии
+											td 0
+											td Подробнее
+							h4.uk-text-center Всего в команде: 0 чел.
+					div(class="uk-width-1-6@m")
+						div
+							ul.uk-list.uk-card.uk-card-default.uk-card-body
+								li.active
+									a(href="") Главная
+								li
+									a(href="") Заказать тариф
+								li
+									a(href="") Реф-ссылки
+								li
+									a(href="") Команда
+								li
+									a(href="") Спонсоры
+								li
+									a(href="") Профиль
+								li
+									a(href="") Служба поддержки
+
+		include ../components/footer.pug
+				
+		// This is the modal enter
+		#enter(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Вход
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пароль')
+						button.uk-button.uk-button-primary(type='button') Войти
+		
+		// This is the modal registration
+		#registration(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Регистрация
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Почта')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пороль')
+						button.uk-button.uk-button-primary(type='button') Регистрация
+		include assets/_scripts.pug

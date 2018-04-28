@@ -1,0 +1,91 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		include ../components/header.pug
+		section.personal-area
+			.uk-container-expand.uk-container
+				
+				.uk-grid(class="uk-grid-small" uk-grid)
+					div(class="uk-width-expand@m")
+						div.uk-card-default.uk-card-body
+							h1 РЕФ-ССЫЛКИ
+								.uk-placeholder.uk-margin-medium-top
+									.uk-margin-medium
+										p Главная страница:
+											a(href="") http://gamma-finance.com/?ref=max8989
+									.uk-margin-medium
+										p Страница регистрации:
+											a(href="") http://gamma-finance.com/reg.php?ref=max8989
+									.uk-margin-medium
+										h4 Переходов по ссылке: 0
+									.uk-background-muted.uk-padding.uk-panel
+										.uk-text-center
+											span(uk-icon='icon: warning; ratio: 2')
+
+										p.uk-h4.uk-margin-small-top ВНИМАНИЕ! В соц. сетях переходы по нашим реф-ссылкам заблокированы. <br> Для обхода данной блокировки необходимо использовать редирект.
+									.uk-margin-large
+										h4 Видео инструкция - Как сделать редирект реф-ссылки
+										div(class="uk-width-1-2@m uk-margin-auto")
+											iframe(width='100%', height='315', src='https://www.youtube.com/embed/LgWVSDNWFD0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+									.uk-margin
+										h4.uk-text-center Первая часть кода:
+																				
+										blockquote 
+											p код ссылки
+									.uk-margin
+										h4.uk-text-center Вторая часть кода:
+										blockquote 
+											p код ссылки
+											
+					div(class="uk-width-1-6@m")
+						div
+							ul.uk-list.uk-card.uk-card-default.uk-card-body
+								li.active
+									a(href="") Главная
+								li
+									a(href="") Заказать тариф
+								li
+									a(href="") Реф-ссылки
+								li
+									a(href="") Команда
+								li
+									a(href="") Спонсоры
+								li
+									a(href="") Профиль
+								li
+									a(href="") Служба поддержки
+
+		include ../components/footer.pug
+				
+		// This is the modal enter
+		#enter(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Вход
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пароль')
+						button.uk-button.uk-button-primary(type='button') Войти
+		
+		// This is the modal registration
+		#registration(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Регистрация
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Почта')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пороль')
+						button.uk-button.uk-button-primary(type='button') Регистрация
+		include assets/_scripts.pug

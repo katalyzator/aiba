@@ -1,0 +1,175 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		include ../components/header.pug
+		section.slider
+			.uk-position-relative.uk-visible-toggle(uk-slideshow='animation: push; min-height: 300; max-height: 700')
+				ul.uk-slideshow-items
+					li
+						img(src='img/slider.jpg', alt='', uk-cover='')
+						.uk-overlay.uk-overlay-primary.uk-position-center.uk-text-center
+							h3 The new <br> ONLINE BUSINESS
+							p.uk-margin-remove Жизнь ярче. Денег больше.
+					li
+						img(src='img/slider.jpg', alt='', uk-cover='')
+						.uk-overlay.uk-overlay-primary.uk-position-center.uk-text-center
+							h3 Overlay Bottom
+							p.uk-margin-remove Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					li
+						img(src='img/slider.jpg', alt='', uk-cover='')
+						.uk-overlay.uk-overlay-primary.uk-position-center.uk-text-center
+							h3 Overlay Bottom
+							p.uk-margin-remove Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				.uk-light
+					a.uk-position-center-left.uk-position-small.uk-hidden-hover(href='#', uk-slidenav-previous='', uk-slideshow-item='previous')
+					a.uk-position-center-right.uk-position-small.uk-hidden-hover(href='#', uk-slidenav-next='', uk-slideshow-item='next')
+		section.statistic
+			.uk-container
+				h2 Статистика
+				.uk-grid(class="uk-child-width-1-3@m" uk-grid)
+					div
+						.item
+							.ldBar.label-center(style='width:50%;height:50%;margin:auto', data-value='35', data-preset='circle', data-stroke="#82b440", data-stroke-trail-width="10" data-stroke-width="5")
+							h4.uk-text-center Lorem ipsum dolor sit amet.
+					div
+						.item
+							.ldBar.label-center(style='width:50%;height:50%;margin:auto', data-value='35', data-preset='circle', data-stroke="#82b440", data-stroke-trail-width="10" data-stroke-width="5")
+							h4.uk-text-center Lorem ipsum dolor sit amet.
+					div
+						.item
+							.ldBar.label-center(style='width:50%;height:50%;margin:auto', data-value='35', data-preset='circle', data-stroke="#82b440", data-stroke-trail-width="10" data-stroke-width="5")
+							h4.uk-text-center Lorem ipsum dolor sit amet.
+				p.uk-text-center Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas aspernatur reiciendis minus labore, temporibus atque fugit dolorum aperiam hic!
+		section.text-block(style="background-color: rgba(62, 189, 249, 0.9); ")
+			.uk-container
+				h4 Начните свой бизнес с профессионалами
+				a(href="").uk-button.uk-button-default Начать
+		section.work-block
+			.uk-container
+				h4 Как это все устроено
+				iframe(width='560', height='315', src='https://www.youtube.com/embed/dX3k_QDnzHE', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique exercitationem at facilis vel debitis vero quis quasi laudantium fuga consectetur. Sed laborum nesciunt dolorem eius error laboriosam commodi amet deserunt aut sunt nemo nihil reprehenderit qui non, accusantium odit? Suscipit.
+		section.text-block(style="background-color: #f3c753; ")
+			.uk-container
+				h4 Начните свой бизнес с профессионалами
+				a(href="").uk-button.uk-button-default Начать
+		section.advantage
+			.uk-container
+				h2 Наше преимущество
+				.uk-grid.uk-grid-small.uk-margin-large(class="uk-child-width-1-4@m" uk-grid uk-height-match="target: > div > .item")
+					div
+						.item.uk-box-shadow-small
+							.uk-padding
+								.image.uk-text-center
+									img(src="img/t1.png", alt="")
+								h5.uk-text-center Открыт для всех
+								p.uk-text-center Полностью отсутствует ежемесячная абонентская плата. Зарабатывайте когда хотите, даже если вы были в отъезде, аккаунт остается за вами, чтобы продолжить участие, просто войдите в него.
+					div
+						.item.uk-box-shadow-small
+							.uk-padding
+								.image.uk-text-center
+									img(src="img/t2.png", alt="")
+								h5.uk-text-center Бонус-партнеры
+								p.uk-text-center Каждому новому участнику дается по 2 партнера от проекта в качестве бонуса. Чем раньше вы вступите в проект, тем быстрей вы получите партнеров и начнете зарабатывать.
+					div
+						.item.uk-box-shadow-small
+							.uk-padding
+								.image.uk-text-center
+									img(src="img/t3.png", alt="")
+								h5.uk-text-center Мгновенные переводы
+								p.uk-text-center Все денежные переводы осуществляются только между участниками проекта напрямую, без посредников. В проекте деньги не хранятся, что гарантирует безопасность.
+					div
+						.item.uk-box-shadow-small
+							.uk-padding
+								.image.uk-text-center
+									img(src="img/t4.png", alt="")
+								h5.uk-text-center Развитие и поддержка
+								p.uk-text-center Профессиональная команда поддержки всегда поможет, и проконсультирует. Мы даем всем бесплатное обучение и вы начнете зарабатывать правильно.
+		section.tarif
+			.uk-container
+				h2 Тарифы и стоимость
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, similique?
+				.uk-grid.uk-margin-large(class="uk-child-width-1-5@m" uk-grid)
+					div
+						.item
+							.uk-margin
+								h5.uk-text-center Lorem ipsum dolor sit amet.
+								h6 Категория
+							.uk-cover-container.uk-height-small
+								img(src="http://via.placeholder.com/100x100", alt="", uk-cover)
+							
+							p.uk-text-center 6500 Сом
+					div
+						.item
+							.uk-margin
+								h5.uk-text-center Lorem ipsum dolor sit amet.
+								h6 Категория
+							.uk-cover-container.uk-height-small
+								img(src="http://via.placeholder.com/100x100", alt="", uk-cover)
+							
+							p.uk-text-center 6500 Сом
+					div
+						.item
+							.uk-margin
+								h5.uk-text-center Lorem ipsum dolor sit amet.
+								h6 Категория
+							.uk-cover-container.uk-height-small
+								img(src="http://via.placeholder.com/100x100", alt="", uk-cover)
+							
+							p.uk-text-center 6500 Сом
+					div
+						.item
+							.uk-margin
+								h5.uk-text-center Lorem ipsum dolor sit amet.
+								h6 Категория
+							.uk-cover-container.uk-height-small
+								img(src="http://via.placeholder.com/100x100", alt="", uk-cover)
+							
+							p.uk-text-center 6500 Сом
+					div
+						.item
+							.uk-margin
+								h5.uk-text-center Lorem ipsum dolor sit amet.
+								h6 Категория
+							.uk-cover-container.uk-height-small
+								img(src="http://via.placeholder.com/100x100", alt="", uk-cover)
+							
+							p.uk-text-center 6500 Сом
+		section.text-block(style="background-color: #25cfab; ")
+			.uk-container
+				h4 Начните свой бизнес с профессионалами
+				a(href="").uk-button.uk-button-default Начать
+		include ../components/footer.pug
+				
+		// This is the modal enter
+		#enter(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Вход
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пароль')
+						button.uk-button.uk-button-primary(type='button') Войти
+		
+		// This is the modal registration
+		#registration(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Регистрация
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Почта')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пороль')
+						button.uk-button.uk-button-primary(type='button') Регистрация
+		include assets/_scripts.pug

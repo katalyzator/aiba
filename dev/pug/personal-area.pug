@@ -1,0 +1,133 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		include ../components/header.pug
+		section.personal-area
+			.uk-container-expand.uk-container
+				
+				.uk-grid(class="uk-grid-small" uk-grid)
+					div(class="uk-width-expand@m")
+						.uk-grid.uk-grid-small(uk-grid class="uk-child-width-1-2@m  " uk-height-match="target: > div > .uk-card")
+							div
+								.uk-card.uk-card-default.uk-card-body.uk-flex.uk-flex-middle
+									div.uk-flex.uk-width-1-1
+										div.uk-width-1-1
+											h3.uk-card-title Ваш тариф: Красный
+											.uk-margin
+												p Сейчас Вы можете заказать тариф Жёлтый. Для этого вам нужно иметь на своем QIWI-кошельке не менее 400 рублей.
+											a(href='#').uk-button.uk-button-default Заказать тариф
+							div
+								.uk-card.uk-card-default.uk-card-body
+									div
+										div
+											.uk-overflow-auto
+												table.uk-table.uk-table-small.uk-table-divider.uk-table-hover
+													thead
+														tr 			
+															th Тариф
+															th Цена
+															th Новые
+															th Продано
+													tbody
+														tr
+															td Красный
+															td 200 руб
+															td 0
+															td 0
+														tr
+															td Жёлтый
+															td 400 руб
+															td 0
+															td 0
+														tr
+															td Синий
+															td 600 руб
+															td 0
+															td 0
+														tr
+															td Зелёный
+															td 800 руб
+															td 0
+															td 0
+														tr
+															td Фиолетовый
+															td 1000 руб
+															td 0
+															td 0
+							div
+								.uk-card.uk-card-default.uk-card-body.uk-flex.uk-flex-middle
+									div.uk-flex.uk-width-1-1
+										div.uk-width-1-1
+											h2.uk-text-center ПАРТНЕРСКАЯ ССЫЛКА
+											.uk-margin
+												h3.uk-card-title.uk-margin-remove Главная страница:
+												a(href="") http://gamma-finance.com/?ref=max8989
+											.uk-margin
+												h3.uk-card-title.uk-margin-remove Страница регистрации:
+												a(href="") http://gamma-finance.com/reg.php?ref=max8989
+											p
+												a(href='#').uk-button.uk-button-default Сделать редирект ссылки
+							div
+								.uk-card.uk-card-default.uk-card-body.uk-flex.uk-flex-middle
+									div.uk-flex.uk-width-1-1
+										div.uk-width-1-1
+											h2.uk-text-center СТАТИСТИКА
+											.uk-margin
+												h3.uk-card-title Количество партнеров в команде: 0
+											.uk-margin
+												h3.uk-card-title Заработано: 0 рублей
+					div(class="uk-width-1-6@m")
+						div
+							ul.uk-list.uk-card.uk-card-default.uk-card-body
+								li.active
+									a(href="") Главная
+								li
+									a(href="") Заказать тариф
+								li
+									a(href="") Реф-ссылки
+								li
+									a(href="") Команда
+								li
+									a(href="") Спонсоры
+								li
+									a(href="") Промо-материалы
+								li
+									a(href="") Внутренняя почта
+								li
+									a(href="") Профиль
+								li
+									a(href="") Служба поддержки
+		include ../components/footer.pug
+				
+		// This is the modal enter
+		#enter(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Вход
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пароль')
+						button.uk-button.uk-button-primary(type='button') Войти
+		
+		// This is the modal registration
+		#registration(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Регистрация
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Почта')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пороль')
+						button.uk-button.uk-button-primary(type='button') Регистрация
+		include assets/_scripts.pug

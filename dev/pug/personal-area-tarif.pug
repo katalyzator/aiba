@@ -1,0 +1,101 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+		
+	body.uk-animation-fade
+		include ../components/header.pug
+		section.personal-area
+			.uk-container-expand.uk-container
+				
+				.uk-grid(class="uk-grid-small" uk-grid)
+					div(class="uk-width-expand@m")
+						div.uk-card-default.uk-card-body
+							h1 ЗАКАЗАТЬ ТАРИФ
+							.uk-overflow-auto
+								table.uk-table.uk-table-small.uk-table-divider.uk-table-hover.uk-table-middle
+									thead
+										tr 			 				
+											th Спонсор
+											th Контакты
+											th QIWI-кошелек
+											th Сумма
+											th ID транзакции
+									tbody
+										tr
+											td KasperJr
+											td +996444 44 44 44
+											td +79273094808
+											td 400 рублей
+											td
+												input.uk-input
+										tr
+											td KasperJr
+											td +996444 44 44 44
+											td +79273094808
+											td 400 рублей
+											td
+												input.uk-input
+								.uk-text-center
+									button.uk-button.uk-button-default Заказать тариф
+								.uk-placeholder.uk-margin-medium
+									p У вас тариф: Красный, и сейчас вы можете заказать тариф: Жёлтый.
+
+									p Для заказа тарифа совершите перевод на сумму: 400 рублей через платежную систему w.qiwi.com на вышеуказанный номер.
+
+									p В комментарии к переводу укажите: От max8989, Gamma Finance
+
+									p После совершения перевода, в QIWI-кошельке в верхнем правом углу переходим в раздел "История".
+									p Далее в левом блоке выбираем период отчетов "Сегодня".
+									p Далее копируем и вставляем ID транзакцию перевода и нажимаем "Заказать тариф"
+
+									p Ваш спонсор получит уведомление о покупке тарифа, зайдет в свой QIWI-кошелек, если платеж поступил на его счет, то сразу подтвердит Ваш заказ.
+					div(class="uk-width-1-6@m")
+						div
+							ul.uk-list.uk-card.uk-card-default.uk-card-body
+								li.active
+									a(href="") Главная
+								li
+									a(href="") Заказать тариф
+								li
+									a(href="") Реф-ссылки
+								li
+									a(href="") Команда
+								li
+									a(href="") Спонсоры
+								li
+									a(href="") Профиль
+								li
+									a(href="") Служба поддержки
+
+		include ../components/footer.pug
+				
+		// This is the modal enter
+		#enter(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Вход
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пароль')
+						button.uk-button.uk-button-primary(type='button') Войти
+		
+		// This is the modal registration
+		#registration(uk-modal='')
+			.uk-modal-dialog.uk-modal-body
+				button.uk-modal-close-default(type='button' uk-close)
+				form
+					fieldset.uk-fieldset
+						legend.uk-legend Регистрация
+						.uk-margin
+							input.uk-input(type='text', placeholder='Имя')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Почта')
+						.uk-margin
+							input.uk-input(type='text', placeholder='Пороль')
+						button.uk-button.uk-button-primary(type='button') Регистрация
+		include assets/_scripts.pug

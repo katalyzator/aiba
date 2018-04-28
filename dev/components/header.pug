@@ -1,0 +1,70 @@
+header(uk-sticky="top: 500; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up")
+    .uk-container
+        nav.uk-navbar(uk-navbar='' class="uk-visible@l")
+            .uk-navbar-left
+                ul.uk-navbar-nav
+                    li
+                        a(href='#') Logo
+            
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href='#') Главная
+                    li
+                        a(href='#') Маркетинг
+                    li
+                        a(href='#') Faq
+                    li
+                        a(href='#') Соглашение
+                ul.uk-navbar-nav.social
+                    li
+                        a(href='#') VK
+                    li
+                        a(href='#') FB
+                    li
+                        a(href='#') OD
+            .uk-navbar-right
+                ul.uk-navbar-nav.reg.uk-text-center
+                    li
+                        a(href="#" uk-toggle="target: #enter") Вход
+                    li
+                        a(href="#" uk-toggle="target: #registration")  Регистрация
+    .boundary-align.uk-panel(class="uk-hidden@l")
+        .uk-flex-between.uk-flex
+            div
+                a(href='#scroll-block-1'  uk-scroll)
+                    img(src="img/png/logo.png", alt="")
+            div
+                button.uk-button.uk-button-default(type='button')
+                    span(uk-icon="icon: grid")
+        div(uk-drop='pos: bottom-justify; boundary: .boundary-align; boundary-align: true; mode: click').uk-margin-remove
+            .uk-card.uk-card-body.uk-card-default
+                nav.uk-navbar(uk-navbar='')
+                    .uk-navbar-center
+                        ul.uk-navbar-nav
+                            li
+                                a(href='#') Logo
+                    
+                        ul.uk-navbar-nav
+                            li
+                                a(href='#') Главная
+                            li
+                                a(href='#') Маркетинг
+                            li
+                                a(href='#') Faq
+                            li
+                                a(href='#') Соглашение
+                        ul.uk-navbar-nav.social
+                            li
+                                a(href='#') VK
+                            li
+                                a(href='#') FB
+                            li
+                                a(href='#') OD
+                        ul.uk-navbar-nav
+                            li.phone
+                                a(href='tel: 0553 54 97 98') 0553 54 97 98
+                        ul.uk-navbar-nav.reg.uk-text-center.uk-margin
+                            li
+                                a(href="#" uk-toggle="target: #enter") Вход
+                            li
+                                a(href="#" uk-toggle="target: #registration")  Регистрация
